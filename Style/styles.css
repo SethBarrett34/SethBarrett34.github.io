@@ -1,7 +1,7 @@
 
 body {
     font-family: sans-serif;
-    
+    margin: auto;
 }
 
 h1 {
@@ -23,36 +23,30 @@ th, td{
     border: 2px solid gray;
     padding: 1em;
 }
-.tuesday-thursday {
+.tuesday_thursday {
     background-color: #6ab099;
     color: #e0f6ef;
 }
 
-.content-container {
+.columns {
     display: flex;
     justify-content: space-between; 
-    align-items: flex-start; 
+    align-items: stretch; 
 }
 
-.left-column, .right-column {
+.left_column, .right_column {
     padding: 1rem;
     flex: 1; 
     flex-direction: column; 
 }
-
-.image-container {
-    text-align: center;
-    max-width: 100%;
+.images img {
+    max-width: 50%;
+    border: 9px solid;
+    border-radius: 3px;
+    border-color: #000000;
+    transition: border-radius 0.5s;
 }
 
-.image-container img {
-    max-width: 450px;
-    border: 5px solid transparent;
-    border-radius: 1px;
-    transition: border-radius 0.3s;
-}
-
-.image-container img:hover {
-    border-color: #6ab099;
-    border-radius: 50%;
+.images img:hover {
+    border-radius: 40%;
 }

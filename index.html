@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/styles.css">
     <title>My MSU Page</title>
 </head>
 <body>
     <h1>Seth Barrett</h1>
     <h2>Net ID: v96b383</h2>
-    <h2>GitHub Pages:</h2>
-    <p><a href="https://github.com/SethBarrett34/SethBarrett34.github.io">Your GitHub Pages</a></p>
-    <h2>Class Schedule:</h2>
+    <p><a href="https://SethBarrett34.github.io">My GitHub Pages Site</a></p>
+    <div class="content-container">
+        <div class="right-column">
+    <h3>Class Schedule</h3>
     <table>
         <tr>
             <th>Time</th>
             <th>Monday</th>
-            <th>Tuesday</th>
+            <th class="tuesday-thursday">Tuesday</th>
             <th>Wednesday</th>
-            <th>Thursday</th>
+            <th class="tuesday-thursday">Thursday</th>
             <th>Friday</th>
         </tr>
         <tr>
             <td>10:50 AM - 12:05 PM</td>
             <td></td>
-            <td>COA 256</td>
+            <td class="tuesday-thursday">COA 256</td>
             <td></td>
             <td></td>
             <td></td>
@@ -31,7 +33,7 @@
         <tr>
             <td>12:15 PM - 1:30 PM</td>
             <td></td>
-            <td>ESOF 322</td>
+            <td class="tuesday-thursday">ESOF 322</td>
             <td></td>
             <td></td>
             <td></td>
@@ -47,9 +49,9 @@
         <tr>
             <td>1:40 PM - 2:55 PM</td>
             <td></td>
-            <td>M 166</td>
+            <td class="tuesday-thursday">M 166</td>
             <td></td>
-            <td>M 166</td>
+            <td class="tuesday-thursday">M 166</td>
             <td></td>
         </tr>
         <tr>
@@ -61,12 +63,34 @@
             <td>CSCI 331</td>
         </tr>
     </table>
-    <h2>Previous Courses:</h2>
+    <h3>Previous Courses</h3>
     <ul>
         <li>CSCI 127</li>
         <li>CSCI 232</li>
         <li>CSCI 132</li>
         <li>M 166Q</li>
     </ul>
+    </div>
+    <div class="left-column">
+    <h3>Questionaire: Birthday and Favorite Sport Data:</h3>
+    <form action="https://www.cs.montana.edu/users/h48c334/form-viewer.php" method="GET">
+        <label for="bar">Enter your bedtime.</label>
+        <input type="time" name="bedtime" id="timeid">
+
+        <label for="colorid">Enter your Birthday.</label>
+        <input type="date" name="birthday" id="calender">
+        <input type="submit" value="Send Data to Server">
+    </form>
+    <h3>My Interests: Working out and Baseball</h3>
+    <div class="image-container">
+        <a href="https://en.wikipedia.org/wiki/Weightlifting" target="_blank">
+            <img src="imgs/image1.jpg" alt="Image 1">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Baseball" target="_blank">
+            <img src="imgs/image2.jpg" alt="Image 2">
+        </a>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
